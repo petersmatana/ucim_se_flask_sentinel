@@ -1,0 +1,17 @@
+'''
+
+get barer token
+
+curl -k -X POST -d "client_id=nFnFzw73f2gZIHJMJPq5IXOWw3R4WVsNhTGosjsW&grant_type=password&username=smonty&password=hovno" https://localhost:5000/oauth/token
+
+
+pokracuju pomoci refresh tokenu
+
+curl -k -X POST -d "client_id=nFnFzw73f2gZIHJMJPq5IXOWw3R4WVsNhTGosjsW&grant_type=refresh_token&refresh_token=M7Paij3oZTVx5WZrNp6mIuyZSBRQst" https://localhost:5000/oauth/token
+
+
+to co mi vrati druhy komand, tak vemu access_token a ten vrazim jako barer token
+
+curl -k -H "Authorization: Bearer 6mcV0o7ocIVlDpWyHKNDfEKwiZSt8x" https://localhost:5000/endpoint
+
+'''
